@@ -1,0 +1,42 @@
+spring:
+  application:
+    name: ic-registry
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.25.116:8848
+dubbo:
+  scan:
+    base-packages: com.online.icourse.business.controller
+  protocol:
+    name: dubbo
+    port: -1
+    serialization: kryo
+  registry:
+    address: nacos://192.168.25.116:8848
+server:
+  port: 8101
+
+endpoints:
+  dubbo:
+    enabled: true
+management:
+  health:
+    dubbo:
+      status:
+        defaults: memory
+        extras: threadpool
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+user:
+  name: "唯我成幸"
+
+icourse:
+  doc:
+    title: 用户注册业务文档
+    desc: 用户注册业务Api

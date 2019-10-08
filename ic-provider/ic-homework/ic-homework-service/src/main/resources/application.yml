@@ -1,0 +1,25 @@
+#server:
+#  port: ${random.int[9500,9999]}
+#spring:
+#  application:
+#    name: ic-homework
+#  main:
+#    allow-bean-definition-overriding: true
+#  data:
+#    mongodb:
+#      uri:  mongodb://root:123@localhost:27017
+#      database: icourse2
+#dubbo:
+#  scan:
+#    base-packages: com.online.icourse.provider.service
+#  protocol:
+#    name: dubbo
+#    port: -1
+#    serialization: kryo
+#  registry:
+#    address: nacos://182.92.219.19:8848
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"

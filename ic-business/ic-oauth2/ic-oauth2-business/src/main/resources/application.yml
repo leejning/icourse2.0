@@ -1,0 +1,49 @@
+spring:
+  application:
+    name: ic-business-oauth
+  main:
+    allow-bean-definition-overriding: true
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.25.116:8848
+  redis:
+    host: ${REDIS_HOST:192.168.25.116}
+    port: ${REDIS_PORT:6379}
+    timeout: 5000 #连接超时 毫秒
+    jedis:
+      pool:
+        maxActive: 3
+        maxIdle: 3
+        minIdle: 1
+        maxWait: -1 #连接池最大等行时间 -1没有限制
+dubbo:
+  scan:
+    base-packages: com.online.icourse.business.config.service,com.online.icourse.business.service
+  protocol:
+    name: dubbo
+    port: -1
+    serialization: kryo
+  registry:
+    address: nacos://192.168.25.116:8848
+server:
+  port: 9099
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+icourse:
+  auth:
+    tokenValiditySeconds: 1200
+    clientId: client
+    clientSecret: secret
+encrypt:
+  key-store:
+    location: classpath:/rsa.keystore
+    secret: keystore123456
+    alias: xckey
+    password: 123456

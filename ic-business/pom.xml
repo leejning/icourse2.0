@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>icourse2.0</artifactId>
+        <groupId>com.online.icourse</groupId>
+        <version>2.0.0-SNAPSHOT</version>
+
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>ic-business</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>ic-oauth2</module>
+        <module>ic-profile</module>
+        <module>ic-registry-business</module>
+        <module>ic-student-feign</module>
+        <module>ic-student-business</module>
+        <module>ic-course-teacher-feign</module>
+        <module>ic-course-teacher-business</module>
+        <module>ic-class-teacher-feign</module>
+        <module>ic-class-teacher-business</module>
+        <module>ic-exercise-teacher-feign</module>
+        <module>ic-exercise-teacher-business</module>
+        <module>ic-homework-teacher-business</module>
+        <module>ic-homework-teacher-feign</module>
+        <module>ic-homework-student-business</module>
+        <module>ic-homework-student-feign</module>
+    </modules>
+    <dependencies>
+
+
+        <!--hibernate validator-->
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <scope>compile</scope>
+        </dependency>
+        <!--lombok-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>compile</scope>
+        </dependency>
+        <!--restTemplate-->
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+</project>
