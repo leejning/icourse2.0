@@ -1,5 +1,7 @@
 package com.online.icourse.gateway;
 
+import com.online.icourse.gateway.config.GlobalTokenFilter;
+import com.online.icourse.gateway.config.TokenGatewayFilterFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
@@ -73,4 +75,14 @@ public class GatewayApplication {
         };
     }
     // ----------------------------- 解决跨域 End -----------------------------
+
+//    @Bean
+    public GlobalTokenFilter tokenFilter(){
+        return new GlobalTokenFilter();
+    }
+
+    @Bean
+    public TokenGatewayFilterFactory tokenGatewayFilterFactory(){
+        return new TokenGatewayFilterFactory();
+    }
 }

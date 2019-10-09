@@ -1,7 +1,7 @@
 package com.online.icourse.provider.service;
 
-import com.online.icourse.business.common.ClazzCode;
 import com.online.icourse.business.dto.ClazzBaseInfo;
+import com.online.icourse.common.code.ClazzCode;
 import com.online.icourse.common.model.PageAndSortObj;
 import com.online.icourse.common.model.response.CommonCode;
 import com.online.icourse.common.model.response.DubboResponse;

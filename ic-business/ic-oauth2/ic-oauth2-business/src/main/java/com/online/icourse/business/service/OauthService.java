@@ -2,7 +2,6 @@ package com.online.icourse.business.service;
 
 
 import com.google.common.collect.Maps;
-import com.online.icource.business.oauth.common.AuthCode;
 import com.online.icourse.business.dto.AuthToken;
 import com.online.icourse.business.dto.LoginParam;
 import com.online.icourse.business.dto.Oauth2Response;

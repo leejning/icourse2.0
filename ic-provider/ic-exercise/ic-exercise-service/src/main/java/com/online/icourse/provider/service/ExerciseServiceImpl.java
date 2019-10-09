@@ -1,6 +1,6 @@
 package com.online.icourse.provider.service;
 
-import com.online.icourse.business.common.ExerciseCode;
+import com.online.icourse.common.code.ExerciseCode;
 import com.online.icourse.common.model.PageAndSortObj;
 import com.online.icourse.common.model.response.CommonCode;
 import com.online.icourse.common.model.response.DubboResponse;

@@ -5,7 +5,7 @@ import com.online.icourse.provider.api.ChapterService;
 import com.online.icourse.provider.bean.Chapter;
 import com.online.icourse.provider.bean.dto.ChapterQueryDto;
 import com.online.icourse.provider.dao.ChapterDao;
-import com.online.icourse.provider.dto.request.ChapterInfo;
+import com.online.icourse.business.dto.request.ChapterInfo;
 import org.apache.dubbo.config.annotation.Service;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;

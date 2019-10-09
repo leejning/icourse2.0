@@ -1,8 +1,8 @@
 package com.online.icourse.business.controller;
 
 import com.online.icourse.business.api.StudentControllerApi;
-import com.online.icourse.business.common.StudentCode;
 import com.online.icourse.business.dto.request.StudentInfo;
+import com.online.icourse.common.code.StudentCode;
 import com.online.icourse.common.model.response.QueryResponseResult;
 import com.online.icourse.common.model.response.QueryResult;
 import com.online.icourse.common.model.response.ResponseResult;

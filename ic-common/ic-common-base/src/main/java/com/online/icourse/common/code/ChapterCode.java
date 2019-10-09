@@ -1,21 +1,22 @@
-package com.online.icourse.business.common;
+package com.online.icourse.common.code;
 
 import com.google.common.collect.ImmutableMap;
 import com.online.icourse.common.model.response.ResultCode;
 
 /**
- * @ClassName StudentCode
+ * @ClassName ChapterCode
  * @Description: TODO
  * @Author Administrator
- * @Date 2019/9/30 0030
+ * @Date 2019/10/1 0001
  * @Version V1.0
  **/
-public enum StudentCode implements ResultCode {
+public enum ChapterCode implements ResultCode {
     /**
      *
      */
-    ADD_STUDENT_FAIL(false,20700,"添加学生失败"),
-    MODIFY_STUDENT_INFI_FAIL(false,20701,"修改学生信息失败"),
+    ADD_CHAPTER_FAIL(false,20800,"添加章节失败"),
+    MODIFY_CHAPTER_INFO_FAIL(false,20801,"修改章节信息失败"),
+    DELETE_CHAPTER_INFO_FAIL(false,20802,"删除章节失败"),
     ;
 
     boolean success;
@@ -23,15 +24,15 @@ public enum StudentCode implements ResultCode {
     int code;
     //提示信息
     String message;
-    private StudentCode(boolean success, int code, String message){
+    private ChapterCode(boolean success, int code, String message){
         this.success = success;
         this.code = code;
         this.message = message;
     }
-    private static final ImmutableMap<Integer, StudentCode> CACHE;
+    private static final ImmutableMap<Integer, ChapterCode> CACHE;
     static {
-        final ImmutableMap.Builder<Integer, StudentCode> builder = ImmutableMap.builder();
-        for (StudentCode commonCode : values()) {
+        final ImmutableMap.Builder<Integer, ChapterCode> builder = ImmutableMap.builder();
+        for (ChapterCode commonCode : values()) {
             builder.put(commonCode.code(), commonCode);
         }
         CACHE = builder.build();

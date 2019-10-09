@@ -50,4 +50,19 @@ public class Oauth2Util {
         }
         return map;
     }
+
+    public static Boolean checkAuthorization(String authorization){
+        if (StringUtils.isEmpty(authorization) || authorization.indexOf("Bearer") < 0) {
+            return null;
+        }
+        String token = authorization.substring(7);
+        try {
+            //解析jwt
+            Jwt decode = JwtHelper.decode(token);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+        return true;
+    }
 }

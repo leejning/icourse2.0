@@ -46,6 +46,7 @@ spring:
             - Path=/api/classtb/**
           filters:
             - StripPrefix=2
+            - Token=true
         - id: IC-BUSINESS-EXERCISE-TEACHER
           uri: lb://ic-business-exercise-teacher
           predicates:

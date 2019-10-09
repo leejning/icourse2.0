@@ -1,17 +1,17 @@
-package com.online.icourse.provider.dto.request;
+package com.online.icourse.business.dto.request;
 
 import lombok.Data;
 
 /**
- * @ClassName ChapterAdd
+ * @ClassName ChapterInfo
  * @Description: TODO
  * @Author Administrator
  * @Date 2019/10/1 0001
  * @Version V1.0
  **/
 @Data
-public class ChapterAdd {
+public class ChapterInfo {
+    Long id;
     String chapterName;
     Long chapterPid;
-    Long courseId;
 }

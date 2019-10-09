@@ -1,11 +1,11 @@
 package com.online.icourse.business.controller;
 
 import com.online.icourse.business.api.CourseControllerApi;
-import com.online.icourse.provider.common.CourseCode;
-import com.online.icourse.provider.dto.CourseDto;
-import com.online.icourse.provider.dto.CourseParam;
-import com.online.icourse.provider.dto.request.CourseAdd;
-import com.online.icourse.provider.dto.request.CourseInfo;
+import com.online.icourse.business.dto.CourseDto;
+import com.online.icourse.business.dto.CourseParam;
+import com.online.icourse.business.dto.request.CourseAdd;
+import com.online.icourse.business.dto.request.CourseInfo;
+import com.online.icourse.common.code.CourseCode;
 import com.online.icourse.common.model.response.CommonCode;
 import com.online.icourse.common.model.response.QueryResponseResult;
 import com.online.icourse.common.model.response.QueryResult;

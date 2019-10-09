@@ -5,8 +5,8 @@ import com.online.icourse.common.model.response.QueryResponseResult;
 import com.online.icourse.common.model.response.ResponseResult;
 import com.online.icourse.provider.bean.Chapter;
 import com.online.icourse.provider.bean.dto.ChapterQueryDto;
-import com.online.icourse.provider.dto.request.ChapterAdd;
-import com.online.icourse.provider.dto.request.ChapterInfo;
+import com.online.icourse.business.dto.request.ChapterAdd;
+import com.online.icourse.business.dto.request.ChapterInfo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 

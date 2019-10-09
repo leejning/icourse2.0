@@ -1,7 +1,7 @@
 package com.online.icourse.business.api;
 
-import com.online.icourse.business.Dto.HomeworkPublishModify;
-import com.online.icourse.business.Dto.PublishHwStuQuery;
+import com.online.icourse.business.dto.HomeworkPublishModify;
+import com.online.icourse.business.dto.PublishHwStuQuery;
 import com.online.icourse.common.model.response.QueryResponseResult;
 import com.online.icourse.common.model.response.ResponseResult;
 import com.online.icourse.provider.bean.AnswerRecord;

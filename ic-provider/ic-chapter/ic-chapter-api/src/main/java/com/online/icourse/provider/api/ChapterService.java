@@ -4,7 +4,7 @@ package com.online.icourse.provider.api;
 import com.online.icourse.common.model.response.QueryResult;
 import com.online.icourse.provider.bean.Chapter;
 import com.online.icourse.provider.bean.dto.ChapterQueryDto;
-import com.online.icourse.provider.dto.request.ChapterInfo;
+import com.online.icourse.business.dto.request.ChapterInfo;
 
 /**
  * @ClassName ChapterService

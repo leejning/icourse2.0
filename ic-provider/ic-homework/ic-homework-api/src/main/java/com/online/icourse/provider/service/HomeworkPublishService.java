@@ -1,6 +1,6 @@
 package com.online.icourse.provider.service;
 
-import com.online.icourse.business.Dto.HomeworkPublishModify;
+import com.online.icourse.business.dto.HomeworkPublishModify;
 import com.online.icourse.common.model.response.DubboResponse;
 import com.online.icourse.common.model.response.QueryResult;
 import com.online.icourse.provider.bean.HomeworkPublish;

@@ -1,9 +1,9 @@
 package com.online.icourse.business.api;
 
-import com.online.icourse.provider.dto.CourseDto;
-import com.online.icourse.provider.dto.CourseParam;
-import com.online.icourse.provider.dto.request.CourseAdd;
-import com.online.icourse.provider.dto.request.CourseInfo;
+import com.online.icourse.business.dto.CourseDto;
+import com.online.icourse.business.dto.CourseParam;
+import com.online.icourse.business.dto.request.CourseAdd;
+import com.online.icourse.business.dto.request.CourseInfo;
 import com.online.icourse.common.model.response.QueryResponseResult;
 import com.online.icourse.common.model.response.ResponseResult;
 import com.online.icourse.provider.bean.Course;

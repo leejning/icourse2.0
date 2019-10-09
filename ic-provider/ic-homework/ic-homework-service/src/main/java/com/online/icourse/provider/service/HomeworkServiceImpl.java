@@ -1,5 +1,6 @@
 package com.online.icourse.provider.service;
 
+import com.online.icourse.common.code.HomeworkCode;
 import com.online.icourse.common.model.PageAndSortObj;
 import com.online.icourse.common.model.response.CommonCode;
 import com.online.icourse.common.model.response.DubboResponse;
@@ -7,7 +8,6 @@ import com.online.icourse.common.model.response.QueryResult;
 import com.online.icourse.common.utils.DataJpaPageUtils;
 import com.online.icourse.provider.bean.Homework;
 import com.online.icourse.provider.bean.dto.query.HomeworkQueryDto;
-import com.online.icourse.provider.common.HomeworkCode;
 import com.online.icourse.provider.dao.HomeworkDao;
 import org.apache.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Autowired;

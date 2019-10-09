@@ -6,7 +6,7 @@ import com.online.icourse.common.utils.DataJpaPageUtils;
 import com.online.icourse.provider.bean.Course;
 import com.online.icourse.provider.bean.dto.CourseQueryDto;
 import com.online.icourse.provider.dao.CourseDao;
-import com.online.icourse.provider.dto.request.CourseInfo;
+import com.online.icourse.business.dto.request.CourseInfo;
 import org.apache.dubbo.config.annotation.Service;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;

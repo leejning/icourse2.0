@@ -1,21 +1,15 @@
-package com.online.icourse.provider.common;
+package com.online.icourse.common.code;
 
 import com.google.common.collect.ImmutableMap;
 import com.online.icourse.common.model.response.ResultCode;
 
-/**
- * @ClassName StudentCode
- * @Description: TODO
- * @Author Administrator
- * @Date 2019/9/30 0030
- * @Version V1.0
- **/
-public enum StudentCode implements ResultCode {
+public enum ClazzCode implements ResultCode {
     /**
      *
      */
-    ADD_STUDENT_FAIL(false,20700,"添加学生失败"),
-    MODIFY_STUDENT_INFI_FAIL(false,20701,"修改学生信息失败"),
+    REMOVE_CLAZZ_BASE_FAIL(false,20800,"删除课堂基本信息失败"),
+    MODIFY_CLAZZ_BASE_FAIL(false,20801,"修改课堂基本信息失败"),
+    NO_CLAZZ_IN_THIS_ID(false,20801,"不存在该id的课堂"),
     ;
 
     boolean success;
@@ -23,15 +17,15 @@ public enum StudentCode implements ResultCode {
     int code;
     //提示信息
     String message;
-    private StudentCode(boolean success, int code, String message){
+    private ClazzCode(boolean success, int code, String message){
         this.success = success;
         this.code = code;
         this.message = message;
     }
-    private static final ImmutableMap<Integer, StudentCode> CACHE;
+    private static final ImmutableMap<Integer, ClazzCode> CACHE;
     static {
-        final ImmutableMap.Builder<Integer, StudentCode> builder = ImmutableMap.builder();
-        for (StudentCode commonCode : values()) {
+        final ImmutableMap.Builder<Integer, ClazzCode> builder = ImmutableMap.builder();
+        for (ClazzCode commonCode : values()) {
             builder.put(commonCode.code(), commonCode);
         }
         CACHE = builder.build();

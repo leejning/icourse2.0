@@ -1,6 +1,6 @@
 package com.online.icourse.provider.service;
 
-import com.online.icourse.provider.dto.request.CourseInfo;
+import com.online.icourse.business.dto.request.CourseInfo;
 import com.online.icourse.common.model.response.QueryResult;
 import com.online.icourse.provider.bean.Course;
 import com.online.icourse.provider.bean.dto.CourseQueryDto;

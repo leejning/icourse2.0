@@ -1,6 +1,6 @@
 package com.online.icourse.provider.service;
 
-import com.online.icourse.business.Dto.PublishHwStuQuery;
+import com.online.icourse.business.dto.PublishHwStuQuery;
 import com.online.icourse.common.model.response.DubboResponse;
 import com.online.icourse.common.model.response.QueryResult;
 import com.online.icourse.provider.bean.AnswerRecord;

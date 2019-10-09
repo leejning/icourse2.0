@@ -1,21 +1,22 @@
-package com.online.icourse.provider.common;
+package com.online.icourse.common.code;
 
 import com.google.common.collect.ImmutableMap;
 import com.online.icourse.common.model.response.ResultCode;
 
 /**
- * @ClassName HomeworkCode
+ * @ClassName StudentClazzCode
  * @Description: TODO
  * @Author Administrator
- * @Date 2019/10/4 0004
+ * @Date 2019/10/2 0002
  * @Version V1.0
  **/
-public enum HomeworkCode implements ResultCode {
+public enum StudentClazzCode implements ResultCode {
     /**
      *
      */
-    NOT_EXSIST_PUBLISH_HOMEWORK_IN_THIS_ID(false,21001,"不存在该id的已发布作业"),
-    NOT_EXSIST_HOMEWORK_IN_THIS_ID(false,21002,"不存在该id作业"),
+    ADD_STUDENT_FAIL(false,20700,"添加学生失败"),
+    STUDENT_IS_IN_THIS_CLASS(false,20702,"学生已加入该课堂"),
+    MODIFY_STUDENT_INFI_FAIL(false,20701,"修改学生信息失败"),
     ;
 
     boolean success;
@@ -23,15 +24,16 @@ public enum HomeworkCode implements ResultCode {
     int code;
     //提示信息
     String message;
-    private HomeworkCode(boolean success, int code, String message){
+    private StudentClazzCode(boolean success, int code, String message){
         this.success = success;
         this.code = code;
         this.message = message;
     }
-    private static final ImmutableMap<Integer, HomeworkCode> CACHE;
+
+    private static final ImmutableMap<Integer, StudentClazzCode> CACHE;
     static {
-        final ImmutableMap.Builder<Integer, HomeworkCode> builder = ImmutableMap.builder();
-        for (HomeworkCode commonCode : values()) {
+        final ImmutableMap.Builder<Integer, StudentClazzCode> builder = ImmutableMap.builder();
+        for (StudentClazzCode commonCode : values()) {
             builder.put(commonCode.code(), commonCode);
         }
         CACHE = builder.build();

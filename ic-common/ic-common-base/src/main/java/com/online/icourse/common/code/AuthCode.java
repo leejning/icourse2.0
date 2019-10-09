@@ -1,4 +1,4 @@
-package com.online.icource.business.oauth.common;
+package com.online.icourse.common.code;
 
 import com.google.common.collect.ImmutableMap;
 import com.online.icourse.common.model.response.ResultCode;

@@ -1,8 +1,9 @@
-package com.online.icourse.business.common;
+package com.online.icourse.common.code;
 
 import com.google.common.collect.ImmutableMap;
 import com.online.icourse.common.model.response.ResultCode;
-/** 
+
+/**
  * @ClassName ProfileCode
  * @Description: TODO 
  * @Author Administrator

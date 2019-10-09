@@ -1,21 +1,21 @@
-package com.online.icourse.provider.common;
+package com.online.icourse.common.code;
 
 import com.google.common.collect.ImmutableMap;
 import com.online.icourse.common.model.response.ResultCode;
 
 /**
- * @ClassName AnswerRecordCode
+ * @ClassName StudentCode
  * @Description: TODO
  * @Author Administrator
- * @Date 2019/10/7 0007
+ * @Date 2019/9/30 0030
  * @Version V1.0
  **/
-public enum AnswerRecordCode implements ResultCode {
+public enum StudentCode implements ResultCode {
     /**
      *
      */
-    STUDENT_HAS_NOT_THIS_HOMEWORK(false,21001,"该学生没有这个作业"),
-    NOT_EXSIST_ANSWER_RECORD_IN_THIS_ID(false,21101,"不存在该id的学生作答记录"),
+    ADD_STUDENT_FAIL(false,20700,"添加学生失败"),
+    MODIFY_STUDENT_INFI_FAIL(false,20701,"修改学生信息失败"),
     ;
 
     boolean success;
@@ -23,15 +23,15 @@ public enum AnswerRecordCode implements ResultCode {
     int code;
     //提示信息
     String message;
-    private AnswerRecordCode(boolean success, int code, String message){
+    private StudentCode(boolean success, int code, String message){
         this.success = success;
         this.code = code;
         this.message = message;
     }
-    private static final ImmutableMap<Integer, AnswerRecordCode> CACHE;
+    private static final ImmutableMap<Integer, StudentCode> CACHE;
     static {
-        final ImmutableMap.Builder<Integer, AnswerRecordCode> builder = ImmutableMap.builder();
-        for (AnswerRecordCode commonCode : values()) {
+        final ImmutableMap.Builder<Integer, StudentCode> builder = ImmutableMap.builder();
+        for (StudentCode commonCode : values()) {
             builder.put(commonCode.code(), commonCode);
         }
         CACHE = builder.build();

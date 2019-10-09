@@ -1,5 +1,6 @@
 package com.online.icourse.provider.service;
 
+import com.online.icourse.common.code.StudentClazzCode;
 import com.online.icourse.common.model.PageAndSortObj;
 import com.online.icourse.common.model.response.CommonCode;
 import com.online.icourse.common.model.response.DubboResponse;
@@ -9,7 +10,6 @@ import com.online.icourse.provider.bean.Student;
 import com.online.icourse.provider.bean.StudentClazz;
 import com.online.icourse.provider.bean.dto.ClazzStudentQueryDto;
 import com.online.icourse.provider.bean.dto.StudentInfoDto;
-import com.online.icourse.provider.common.StudentClazzCode;
 import com.online.icourse.provider.dao.StudentClazzDao;
 import com.online.icourse.provider.dao.StudentDao;
 import org.apache.dubbo.config.annotation.Service;

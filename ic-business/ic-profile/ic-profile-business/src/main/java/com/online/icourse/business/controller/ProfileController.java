@@ -2,11 +2,11 @@ package com.online.icourse.business.controller;
 
 import com.online.icource.business.oauth.common.Oauth2Util;
 import com.online.icourse.business.api.ProfileControllerApi;
-import com.online.icourse.business.common.ProfileCode;
 import com.online.icourse.business.dto.UserIcon;
 import com.online.icourse.business.dto.UserInfo;
 import com.online.icourse.business.dto.UserModify;
 import com.online.icourse.business.dto.UserPassword;
+import com.online.icourse.common.code.ProfileCode;
 import com.online.icourse.common.exception.ExceptionCast;
 import com.online.icourse.common.model.response.ResponseResult;
 import com.online.icourse.provider.api.UserService;

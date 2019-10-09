@@ -1,4 +1,4 @@
-package com.online.icourse.business.Dto;
+package com.online.icourse.business.dto;
 
 import com.online.icourse.common.model.dto.QueryDto;
 import lombok.Data;
